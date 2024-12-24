@@ -2,7 +2,7 @@ dnd-cli/
 ├── cmd/                   # Commands for the CLI
 │   ├── session.go         # Campaign management commands (e.g., create, list, update)
 │   ├── combat.go          # Combat tracker commands (e.g., start, next-turn, end)
-│   ├── inventory.go       # Inventory management commands (e.g., add, remove, list items)
+│   ├── items.go           # The DM's treasury management commands (e.g., arcana, armaments, implements, relics)
 │   ├── player.go          # Player management commands (e.g., create, delete, list)
 │   ├── roll.go            # Dice rolling commands (e.g., roll 1d20)
 │   └── root.go            # Entry point for the CLI, initializes all commands
@@ -17,7 +17,7 @@ dnd-cli/
 ├── pkg/                   # Reusable packages
 │   ├── session/           # Campaign logic (e.g., structure, persistence)
 │   ├── combat/            # Combat tracker logic (e.g., initiative, rounds)
-│   ├── inventory/         # Inventory logic (e.g., item structures, data management)
+│   ├── items/             # Items logic (e.g., item structures, data management)
 │   ├── dice/              # Dice rolling logic
 │   ├── player/            # Player management logic
 │   └── utils/             # Shared utilities (e.g., input validation, output formatting)
