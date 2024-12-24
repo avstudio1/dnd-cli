@@ -1,0 +1,34 @@
+dnd-cli/
+├── cmd/                   # Commands for the CLI
+│   ├── session.go         # Campaign management commands (e.g., create, list, update)
+│   ├── combat.go          # Combat tracker commands (e.g., start, next-turn, end)
+│   ├── inventory.go       # Inventory management commands (e.g., add, remove, list items)
+│   ├── player.go          # Player management commands (e.g., create, delete, list)
+│   ├── roll.go            # Dice rolling commands (e.g., roll 1d20)
+│   └── root.go            # Entry point for the CLI, initializes all commands
+├── data/                  # Data storage (JSON/YAML/CSV)
+│   ├── sessions/          # Session-related data
+│   ├── players/           # Player-related data
+│   └── items/             # Inventory-related data
+├── internal/              # Internal utilities
+│   ├── config/            # Configuration and environment setup
+│   └── storage/           # Abstractions for reading/writing to data/
+├── output/                # A folder for storing a copy of the dm.go executable
+├── pkg/                   # Reusable packages
+│   ├── session/           # Campaign logic (e.g., structure, persistence)
+│   ├── combat/            # Combat tracker logic (e.g., initiative, rounds)
+│   ├── inventory/         # Inventory logic (e.g., item structures, data management)
+│   ├── dice/              # Dice rolling logic
+│   ├── player/            # Player management logic
+│   └── utils/             # Shared utilities (e.g., input validation, output formatting)
+├── tests/                 # Unit and integration tests
+│   ├── cmd/               # Tests for CLI commands
+│   ├── pkg/               # Tests for reusable packages
+│   └── data/              # Tests for data storage logic
+└── .gitignore             # Git ignore file
+└── dm.go                  # Main Go file
+└── dm.sh                  # Bash script to automate builds, tests and deploys
+├── go.mod                 # Go module
+└── go.sum                 # Dependency checksum
+LICENSE                    # License file
+README                     # Readme file

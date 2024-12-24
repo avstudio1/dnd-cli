@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/avstudio1/dnd-cli/dice"
+	"github.com/avstudio1/dnd-cli/pkg/dice"
 	"github.com/spf13/cobra"
 )
 

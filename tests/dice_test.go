@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/avstudio1/dnd-cli/dice"
+	"github.com/avstudio1/dnd-cli/pkg/dice"
 )
 
 func TestRoll(t *testing.T) {

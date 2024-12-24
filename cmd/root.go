@@ -1,6 +1,5 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
@@ -10,18 +9,20 @@ import (
 	"github.com/spf13/cobra"
 )
 
-
-
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "dnd-cli",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "A command line interface for dungeon masters.",
+	Long: `dnd-cli is a comprehensive tool designed to assist dungeon masters in managing their Dungeons & Dragons campaigns.
+	
+This CLI includes the following features:
+- Dice Rolling: Roll standard dice types (e.g., 1d20, 2d6) with support for advanced options like percentage rolls and averages.
+- Campaign Management: Create, list, update, and delete campaigns.
+- Combat Tracker: Manage combat rounds, track initiative, and handle turn progression.
+- Player Management: Add, remove, and list player characters.
+- Inventory Management: Maintain a list of items, add and remove inventory for campaigns or players.
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+Each module is accessible through intuitive commands, making dnd-cli a powerful companion for any dungeon master.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
@@ -47,5 +48,3 @@ func init() {
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
-
-
