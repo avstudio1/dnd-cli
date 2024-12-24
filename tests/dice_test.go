@@ -1,4 +1,4 @@
-package dice_test
+package test
 
 import (
 	"testing"

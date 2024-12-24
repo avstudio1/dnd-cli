@@ -22,7 +22,7 @@ and average (-a).`,
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := dice.Roll(args[0], percentageFlag, averageFlag)
 		if err != nil {
-			fmt.Println("Error:", err)
+			fmt.Printf("Error: %s\n", err.Error())
 			return
 		}
 		fmt.Println(result)
@@ -36,4 +36,9 @@ func init() {
 
 	// Add the command to root
 	rootCmd.AddCommand(diceCmd)
+}
+
+// GetDiceCommand exposes diceCmd for testing
+func GetDiceCommand() *cobra.Command {
+	return diceCmd
 }
